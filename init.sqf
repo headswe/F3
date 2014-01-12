@@ -4,7 +4,7 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
 
-faggot = "cake"
+faggot = "cake
 // ====================================================================================
 
 // F3 - Disable Saving and Auto Saving
