@@ -3,16 +3,11 @@
 // F3 - Process ParamsArray
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
-
-f_processParamsArray = 
-faggot = "cake
 // ====================================================================================
 
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
 enableSaving [false, false];
-
 // ====================================================================================
 
 // F3 - Respawn INIT
