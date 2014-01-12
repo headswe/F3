@@ -5,8 +5,6 @@
 // WARNING: DO NOT DISABLE THIS COMPONENT
 
 f_processParamsArray =
-[] execVM "f\common\f_processParamsArray.sqf";
-
 // ====================================================================================
 
 // F3 - Disable Saving and Auto Saving
