@@ -14,7 +14,7 @@ enableSaving [false, false];
 // F3 - Respawn INIT
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRespawn.sqf"}];
+f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRespawn.sqf"}]
 
 // ====================================================================================
 
