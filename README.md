@@ -1,4 +1,4 @@
-# F3 README #
+# F3 DEAD #
 
 * Version: 3-0-4
 * Codebase: https://github.com/ferstaberinde/F3
