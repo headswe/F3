@@ -8,7 +8,7 @@ removeheadgear _unit;
 removevest _unit;
 
 // use the type of the unit to figure out who gear they need
-switch (_typeofUnit) do 
+switch (_typeofUnit) do
 {
 	case "p":
 	{
@@ -25,6 +25,23 @@ switch (_typeofUnit) do
 		if(!isnil "_pilotRig" && _pilotRig != "") then
 		{
 		_unit addvest _pilotRig;
+		};
+	};
+	case "c":
+	{
+		// if there is a pilotuniform defeined add it to the unit
+		if(!isnil "_crewUniform" && _crewUniform != "") then
+		{
+		_unit adduniform _crewUniform;
+		};
+		// if there is ... etc.
+		if(!isnil "_crewHelmet" && _crewHelmet != "") then
+		{
+		_unit addheadgear _crewHelmet;
+		};
+		if(!isnil "_crewRig" && _crewRig != "") then
+		{
+		_unit addvest _crewRig;
 		};
 	};
 	case "div":
@@ -46,36 +63,7 @@ switch (_typeofUnit) do
 		_unit addGoggles _diverGlasses;
 		};
 	};
-	case "eng":
-	{
-		if(!isnil "_baseUniform" && _baseUniform != "") then
-		{
-		_unit adduniform _baseUniform;
-		};
-		if(!isnil "_baseHelmet" && _baseHelmet != "") then
-		{
-		_unit addheadgear _baseHelmet;
-		};
-		if(!isnil "_heavyRig" && _heavyRig != "") then
-		{
-		_unit addvest _heavyRig;
-		};
-	};
-	case "ar":
-	{
-		if(!isnil "_baseUniform" && _baseUniform != "") then
-		{
-		_unit adduniform _baseUniform;
-		};
-		if(!isnil "_baseHelmet" && _baseHelmet != "") then
-		{
-		_unit addheadgear _baseHelmet;
-		};
-		if(!isnil "_heavyRig" && _heavyRig != "") then
-		{
-		_unit addvest _heavyRig;
-		};
-	};
+
 	default
 	{
 		if(!isnil "_baseUniform" && _baseUniform != "") then
@@ -86,9 +74,9 @@ switch (_typeofUnit) do
 		{
 		_unit addheadgear _baseHelmet;
 		};
-		if(!isnil "_lightRig" && _lightRig != "") then
+		if(!isnil "_mediumrig" && _mediumrig != "") then
 		{
-		_unit addvest _lightRig;
+		_unit addvest _mediumrig;
 		};
 	};
 };

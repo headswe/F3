@@ -1,6 +1,6 @@
 # F3 README #
 
-* Version: 3-0-4
+* Version: 3-0-8
 * Codebase: https://github.com/ferstaberinde/F3
 * Developer: Please see credits section below.
 * Publishers: Fer (alanr@ferstaberinde.com)
@@ -27,7 +27,13 @@
 
 ### F3 Version History ###
 
-* 3-0-4     | XX XXX 2013 | Patch release - Various improvements (see change history).
+Version | Date | Notes
+
+* 3-0-8     | 28 DEC 2013 | Patch release - Various improvements (see change history).
+* 3-0-7     | 14 SEP 2013 | Patch release - Various improvements (see change history).
+* 3-0-6     | 20 AUG 2013 | Patch release - Various improvements (see change history).
+* 3-0-5     | 17 AUG 2013 | Patch release - Various improvements (see change history).
+* 3-0-4     | 08 AUG 2013 | Patch release - Various improvements (see change history).
 * 3-0-3     | 25 JUN 2013 | Patch release - Various improvements (see change history).
 * 3-0-2     | 25 MAR 2013 | Patch release - Various improvements (see change history).
 * 3-0-1     | 17 MAR 2013 | Patch release - Various improvements (see change history).
@@ -120,10 +126,10 @@ Version | Date | Notes
 
 ### F3 Credits ###
 
-* Contributors: Head | Harakka | Fer | Wolfenswan
-* Documentation: Fer
-* Producers: Fer
-* Special Thanks: Zerith
+* Contributors: Head | Harakka | Fer | Wolfenswan | Cam | turowicz | CaseMonster | Black Mamba | DarkTatka | Tigershark
+* Documentation: Fer | Wolfenswan
+* Producers: Fer | Wolfenswan
+* Special Thanks: Zerith | Draakon
 * Special Thanks: Everyone at Folk ARPS
 
 ### F2 Credits ###
@@ -188,7 +194,7 @@ The online manual can be found at:
 
 ## 08. INSTALLATION ##
 
-To begin using the Software, move all the folders in this archive into one of the following directories:
+To begin using the Software, move the F3.Altis folder into one of the following directories:
 
 * \My Documents\Arma 3 Alpha\MPMissions\
 * \My Documents\Arma 3 Alpha Other Profiles\YourPlayerName\MPMissions\
@@ -211,13 +217,77 @@ Fer :) (alanr@ferstaberinde.com) (on behalf of all F3 / F2 / BAS f contributors)
 
 Version | Date
 
-3-0-4 | XX XXX 2013
+3-0-8 | 28 DEC 2013
 
-* Fixed time of day parameter in Mission Conditions Selector component.
+* Moved README.md to the F3 folder.
+* Added BIS debug console for logged-in admins.
+* Added Safe Start component.
+* Added new F3 Spectator component.
+* Overhauled F3 Name Tag component
+* Overhauled F3 Automatic Body Removal Component
+* Overhauled F3 Set AI Skill Component
+* Updated Briefing Template component to reflect new faction names.
+* Updated Mission Observers component to use BIS Splendid Camera.
+* Updated F3 Folk ARPS Platoons component to reflect new faction names.
+* Updated F3 Folk ARPS Assign Gear Script component to reflect new faction names.
+* Updated F3 Folk ARPS Group IDs to reflect new faction names.
+* Updated F3 Folk ARPS Assign Gear scripts to improve weight-distribution in fire teams and reduce overall weight
+* Expanded F3 Folk ARPS Platoons component to include FIA platoon.
+* Expanded F3 Folk ARPS Assign Gear Script component to support FIA platoon.
+* Expanded F3 Folk ARPS Assign Gear Script component to offer more variety for backpacks and vests
+* Expanded Briefing Template component to support FIA platoon.
+* Expanded F3 Folk ARPS Group IDs to support FIA platoon.
+* Expanded F3 Folk ARPS Group Markers to support FIA platoon.
+* Expanded F3 Folk ARPS JIP Reinforcement Options to support FIA platoon.
+* Re-enabled more weather parameter options in Mission Conditions Selector component.
+* Removed now obsolete old F2 name tag component
+* Removed obsolete F2 Tripwire Action entry in init.sqf
+* Removed unnecessary references to Stratis in mission.sqm
+* Disabled Weather synchronization in F3 Missions Conditions selector component for perfomance reasons
+* Fixed minor bug in F3 Folk ARPS Platoons component.
+* Fixed bugs in F3 Mission Conditions Selector introduced by A3 1.02.110.424
+
+3-0-7 | 14 SEP 2013
+
+* Changed default terrain to Altis.
+* Added Fireteam Member Markers component.
+* Added Buddy Team Colours component.
+* Partially re-enabled weather parameter in Mission Conditions Selector component.
+* Expanded F3 Folk ARPS Platoons component:
+ * INDEPENDENT platoon can now be helibourne or mechanised.
+ * BLUFOR platoon now has 1 x tank.
+ * OPFOR platoon now has 1 x tank.
+* Implemented new functions-based approach to parameters, gear etc.
+* Updated F3 Folk ARPS Assign Gear Script component to support new NVG classnames.
+* Removed ShackTactical Fireteam Member Markers component.
+
+3-0-6 | 20 AUG 2013
+
+* Updated Multiplayer Ending Controller component to use new BIS endings.
+* Updated F3 Folk ARPS Assign Gear Script component (various fixes/changes).
+* Fixed additional unsassigned variable errors.
+* Removed unused files and references.
+
+3-0-5 | 17 AUG 2013
+
+* Migrated ACRE Support component (inc. pre-set frequencies, see F3 wiki for details).
+* Expanded F3 Folk ARPS Platoons component:
+ * BLUFOR platoon can now be helibourne or mechanised.
+ * OPFOR platoon can now be helibourne or mechanised.
+ * INDEPENDENT platoon can now be helibourne.
+* Fixed additional unsassigned variable errors.
+* Removed Kegetys Spectator Script component.
+* Removed unused files and references.
+
+3-0-4 | 08 AUG 2013
+
 * Fixed "no entry 'bin\config.bin/CfgWeapons.'." error.
 * Fixed various unsassigned variable errors.
-* Fixed F3 Folk ARPS Group Markers component so medic markers display correctly.
-* Disabled weather parameter in Mission Conditions Selector.
+* Fixed medic markers in F3 Folk ARPS Group Markers component.
+* Fixed time of day parameter in Mission Conditions Selector component.
+* Disabled weather parameter in Mission Conditions Selector component.
+* Added new options to Casualties Cap component.
+* Added new options to Casualties Cap (Advanced) component.
 
 3-0-3 | 25 JUN 2013
 
