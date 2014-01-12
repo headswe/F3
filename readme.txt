@@ -1,7 +1,7 @@
 MISSION README
 ==============
 
-Mission: [ Insert name of mission ]
+Mission: [ Insert name ofah mission ]
 Version: [ Insert version here, format: N-N-N ]
 Developer(s): [ Insert your name(s) here. ]
 Description: [ Insert short mission description here ]
