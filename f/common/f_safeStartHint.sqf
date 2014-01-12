@@ -8,10 +8,10 @@ if(!isDedicated) then
 	//display hint while timer is active
 	while {pv_mission_timer > 0;} do
 	{
-		hintsilent format ["Mission Setup\nTime Remaining: %1\n", pv_mission_timer];
+		hintsilent format ["SAFE START\nTime Remaining: %1 min(s)\n", pv_mission_timer];
 		sleep 5;
 	};
 	
 	//display hint after mission is started
-	hint "Mission setup time is over, mission starting now.";
+	hint "SAFE START\nMission starting now";
 };
