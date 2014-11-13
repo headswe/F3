@@ -438,8 +438,9 @@ class CfgFunctions
 		};
 		class groupMarkers {
 			file = "f\groupMarkers";
-			class localGroupMarker{};
-			class localSpecialistMarker{};
+			class addGroupMarker{};
+			class drawGroupMarkers{};
+			class getGroupMarkerStyle{};
 		};
 		class authorisedCrew
 		{
