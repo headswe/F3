@@ -1,3 +1,4 @@
+private ["_unit","_oldUnit","_forced","_newGrp","_newUnit","_factions","_listBox","_camera","_event"];
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================

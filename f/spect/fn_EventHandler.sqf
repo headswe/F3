@@ -1,3 +1,4 @@
+private ["_type","_args","_handled","_button","_y","_unit","_pos","_index","_key","_zeusKey","_done","_displayDialog","_fullmapWindow"];
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ==================================================================

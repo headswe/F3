@@ -1,3 +1,4 @@
+private ["_red","_green","_blue","_yellow","_oranage","_black","_pink","_white","_fireteam","_unknown","_hq","_support","_supportAT","_recon","_mortar","_maint","_mech","_armor","_air","_plane","_artillery","_med","_input","_texture","_color"];
 // ====================================================================================
 // data values
 _red = [1,0,0,1];

@@ -1,3 +1,4 @@
+private ["_listBox","_groupArr","_tempArr","_text","_index","_val"];
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ==================================================================

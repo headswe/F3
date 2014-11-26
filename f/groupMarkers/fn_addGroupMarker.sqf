@@ -1,3 +1,4 @@
+private ["_entity","_text","_texture","_color","_time","_myId","_pos","_data"];
 _entity = _this select 0;
 _text = _this select 1;
 _texture = _this select 2;

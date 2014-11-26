@@ -1,5 +1,4 @@
 _mapControl = _this select 0;
-
 {
 	_data = _x;
 	_entity = _data select 0;
@@ -21,7 +20,4 @@ _mapControl = _this select 0;
 	_textsize = 0.05;
 	if((ctrlMapScale _mapControl) > 0.1) then {_textsize = 0};
 	_mapControl drawIcon [_texture,_color,_pos,_size,_size,0,_text,1,_textsize,'TahomaB',"right"];
-
-
-
 } foreach f_grpMkr_data;

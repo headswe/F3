@@ -1,3 +1,4 @@
+private ["_fullmapWindow","_camera","_pos","_x1","_y","_icon","_newPos"];
 if(f_cam_mapMode == 0) exitWith {};
 disableSerialization;
 _fullmapWindow = _this select 0;

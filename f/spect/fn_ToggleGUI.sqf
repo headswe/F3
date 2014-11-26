@@ -1,3 +1,4 @@
+private ["_forbiddenControls"];
 #include "macros.hpp"
 _forbiddenControls = [F_CAM_MOUSEHANDLER,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_SPECHELP,F_CAM_HELPFRAME,F_CAM_HELPBACK];
 {

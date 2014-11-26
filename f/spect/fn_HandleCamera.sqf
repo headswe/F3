@@ -1,3 +1,4 @@
+private ["_y","_leftButton","_rightButton"];
 
 _x = f_cam_mouseCord select 0;
 _y = f_cam_mouseCord select 1;

@@ -1,3 +1,4 @@
+private ["_var"];
 f_cam_forcedExit = true;
 closeDialog 1;
 ["f_spect_tags","onEachFrame"] call bis_fnc_removeStackedEventHandler;

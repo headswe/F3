@@ -1,3 +1,4 @@
+private ["_drawUnits","_drawGroup","_isPlayerGroup","_distToCam","_visPos","_color","_str","_icon"];
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ==================================================================

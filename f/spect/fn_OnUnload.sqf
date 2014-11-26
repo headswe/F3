@@ -1,3 +1,4 @@
+private ["_displayDialog","_helpWindow","_mapWindow","_fullmapWindow"];
 disableSerialization;
 sleep 1;
 if (f_cam_forcedExit) ExitWith {};
