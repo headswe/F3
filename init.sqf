@@ -23,6 +23,12 @@ enableSentences false;
 // f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
 // f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
 // [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
+// ====================================================================================
+
+// F3 - F3 Folk ARPS Group IDs
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// TODO : Make function
+[] call compile preprocessFileLineNumbers "f\setGroupID\f_setGroupIDs.sqf";
 
 // ====================================================================================
 
@@ -30,13 +36,6 @@ enableSentences false;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_briefing = [] execVM "briefing.sqf";
-
-// ====================================================================================
-
-// F3 - F3 Folk ARPS Group IDs
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_setGroupIDs = [] call compile "f\setGroupID\f_setGroupIDs.sqf";
 
 // ====================================================================================
 

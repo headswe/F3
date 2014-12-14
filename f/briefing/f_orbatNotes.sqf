@@ -2,9 +2,6 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-// Group IDs need to be set before the ORBAT listing can be created
-waitUntil {scriptDone f_script_setGroupIDs};
-
 // Define needed variables
 private ["_orbatText", "_groups", "_precompileGroups"];
 _orbatText = "<br />NOTE: The ORBAT below is only accurate at mission start.<br />

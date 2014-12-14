@@ -27,19 +27,20 @@ if(_type == -1) exitWith {};
 // ====================================================================================
 
 {
+	_id = _forEachIndex;
 	switch (_type) do {
 	    case 0: {
-	    	if( isNull _x  || { {!alive _x} count units _x == 0 } ) then {_ret pushBack _forEachIndex};
+	    	if( {!alive _x} count units _x == 0 ) then {_ret pushBack _id};
 	    };
 	    case 1: {
-	    	if(_x == _value) then { _ret pushBack _forEachIndex};
+	    	if(_x == _value) then { _ret pushBack _id};
 	    };
 	    case 2: {
-	    	if(_x == _value) then { _ret pushBack _forEachIndex};
-	    	if(_recursive) then
+	    	if(typename _x == "OBJECT" && {_x == _value}) then { _ret pushBack _id};
+	    	if(_recursive && !(_id in _ret)) then
 	    	{
 				{
-					if(_x == _value) then { _ret pushBack _forEachIndex};
+					if(_x == _value) then { _ret pushBack _id};
 				} forEach (units _x);
 			};
 	    };

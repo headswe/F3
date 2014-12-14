@@ -15,11 +15,12 @@ private ["_entity","_text","_texture","_color","_time","_myId","_pos","_data"];
 */
 // ====================================================================================
 
-_entity = _this select 0;
-_text = _this select 1;
-_texture = _this select 2;
-_color = _this select 3;
-_size = _this select 4;
+_entity = [_this, 0, objNull,["",objNull,grpNull]] call BIS_fnc_param;
+_text = [_this, 1, "Unknown",[""]] call BIS_fnc_param;
+_texture = [_this, 2, "",[""]] call BIS_fnc_param;
+_color = [_this, 3, [1,1,1,1],[[]],4] call BIS_fnc_param;
+_size = [_this, 4, [24,24],[[]],2] call BIS_fnc_param;
+_myId = [_this, 5, -1,[0]] call BIS_fnc_param;
 _time = 0;
 
 // ====================================================================================
@@ -29,12 +30,12 @@ if(typeName _entity == "STRING") then
 {
 	_entity = call compile format ["%1",_entity];
 };
-if(isNil "_entity") exitWith {};
-_myId = -1;
+if(isNil "_entity" || isNull _entity) exitWith {};
+
 
 // ====================================================================================
 
-if(count _this > 5) then
+if(_myId != -1) then
 {
 	_myId = _this select 5;
 	if(count f_grpMkr_groups > _myId) then
