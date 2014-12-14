@@ -33,6 +33,7 @@ else
 f_grpMkr_groups = [];
 f_grpMkr_data = [];
 f_grpMkr_id = 0;
+f_grpMkr_delay = 3;
 // ====================================================================================
 // add the handlers to catch the map.
 // Briefing
