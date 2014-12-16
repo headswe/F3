@@ -55,6 +55,9 @@ f_grpMkr_delay = 3;
 [] spawn {
 	waitUntil {!isNull (findDisplay 12)};
 	((findDisplay 12) displayctrl 51) ctrlAddEventHandler ["draw",{_this call F_fnc_drawGroupMarkers}];
+	waitUntil {sleep 1;!isNull (uiNamespace getVariable "RscMiniMap")};
+	((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw",{_this call F_fnc_drawGroupMarkers}];
+	systemChat "attached gps";
 };
 
 [_unitfaction] call f_fnc_setupGroupMarkers;
